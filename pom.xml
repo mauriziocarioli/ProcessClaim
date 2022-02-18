@@ -8,17 +8,34 @@
   <packaging>kjar</packaging>
   <name>ProcessClaim</name>
   <description></description>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <jackson.version>2.12.5</jackson.version>
+    <kie.version>7.59.0.Final-redhat-00006</kie.version>
+  </properties>
   <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+         </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-api</artifactId>
-      <version>7.59.0.Final-redhat-00006</version>
+      <version>${kie.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-internal</artifactId>
-      <version>7.59.0.Final-redhat-00006</version>
+      <version>${kie.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -30,7 +47,7 @@
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-persistence-jaxb</artifactId>
-      <version>7.59.0.Final-redhat-00006</version>
+      <version>${kie.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -51,7 +68,7 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>7.59.0.Final-redhat-00006</version>
+        <version>${kie.version}</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
