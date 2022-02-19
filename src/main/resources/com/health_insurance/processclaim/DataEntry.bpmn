@@ -1,18 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:drools="http://www.jboss.org/drools" id="_D4zSsJGTEeywV_kfhxqVsA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
-  <bpmn2:process id="ProcessClaim.DataEntry" drools:packageName="com.health_insurance.processclaim" drools:version="1.0" drools:adHoc="false" name="DataEntry" isExecutable="true" processType="Public"/>
-  <bpmndi:BPMNDiagram id="_D4zSsZGTEeywV_kfhxqVsA">
-    <bpmndi:BPMNPlane id="_D4zSspGTEeywV_kfhxqVsA" bpmnElement="ProcessClaim.DataEntry"/>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_G8tvoJGTEeywV_kfhxqVsA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:process id="ProcessClaim.DataEntry" drools:packageName="com.health_insurance.processclaim" drools:version="1.0" drools:adHoc="false" name="DataEntry" isExecutable="true" processType="Public">
+    <bpmn2:sequenceFlow id="_202FFEDD-2F72-480E-8A2F-AA795613AB11" sourceRef="_66545C4A-6C96-44F5-8420-1934D14ED7F1" targetRef="_064012D8-AA94-4928-B643-4209F05695B5">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.source">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:startEvent id="_66545C4A-6C96-44F5-8420-1934D14ED7F1">
+      <bpmn2:outgoing>_202FFEDD-2F72-480E-8A2F-AA795613AB11</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:endEvent id="_064012D8-AA94-4928-B643-4209F05695B5">
+      <bpmn2:incoming>_202FFEDD-2F72-480E-8A2F-AA795613AB11</bpmn2:incoming>
+    </bpmn2:endEvent>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_G8tvoZGTEeywV_kfhxqVsA">
+    <bpmndi:BPMNPlane id="_G8tvopGTEeywV_kfhxqVsA" bpmnElement="ProcessClaim.DataEntry">
+      <bpmndi:BPMNShape id="shape__064012D8-AA94-4928-B643-4209F05695B5" bpmnElement="_064012D8-AA94-4928-B643-4209F05695B5">
+        <dc:Bounds height="56.0" width="56.0" x="356.0" y="194.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__66545C4A-6C96-44F5-8420-1934D14ED7F1" bpmnElement="_66545C4A-6C96-44F5-8420-1934D14ED7F1">
+        <dc:Bounds height="56.0" width="56.0" x="356.0" y="90.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="edge_shape__66545C4A-6C96-44F5-8420-1934D14ED7F1_to_shape__064012D8-AA94-4928-B643-4209F05695B5" bpmnElement="_202FFEDD-2F72-480E-8A2F-AA795613AB11">
+        <di:waypoint xsi:type="dc:Point" x="412.0" y="118.0"/>
+        <di:waypoint xsi:type="dc:Point" x="356.0" y="222.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_D4zSs5GTEeywV_kfhxqVsA" type="BPSimData">
+  <bpmn2:relationship id="_G8tvo5GTEeywV_kfhxqVsA" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_66545C4A-6C96-44F5-8420-1934D14ED7F1" id="_G8tvpJGTEeywV_kfhxqVsA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+          </bpsim:ElementParameters>
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_D4zSsJGTEeywV_kfhxqVsA</bpmn2:source>
-    <bpmn2:target>_D4zSsJGTEeywV_kfhxqVsA</bpmn2:target>
+    <bpmn2:source>_G8tvoJGTEeywV_kfhxqVsA</bpmn2:source>
+    <bpmn2:target>_G8tvoJGTEeywV_kfhxqVsA</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
